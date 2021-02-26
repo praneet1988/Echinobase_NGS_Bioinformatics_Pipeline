@@ -6,7 +6,7 @@
 
 ############## Requirements: CSBB-v3.0(https://github.com/csbbcompbio/CSBB-v3.0), R version[>=3.4], PERL version[>=5.16] and PYTHON version[>=2.7]
 
-############## Analysis pipeline can process public RNA-Seq data for xenopus-tropicalis, xenopus-laevis, human, mouse and zebrafish
+############## Analysis pipeline can process public RNA-Seq data for echinobase-pmin, echinobase-spur, xenopus-tropicalis, xenopus-laevis, human, mouse and zebrafish
 
 ############## Analysis pipeline can process public ChIP/ATAC-Seq data for echinobase-pmin, echinobase-spur, xenopus-tropicalis, xenopus-laevis, human and mouse
 
