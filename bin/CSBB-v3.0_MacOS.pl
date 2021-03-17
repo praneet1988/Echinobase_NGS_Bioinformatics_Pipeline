@@ -1129,7 +1129,7 @@ sub ProcessPublic
     my $SRRid=$arr_data[0]; my $species=$arr_data[1]; my $Assay=$arr_data[2]; my $readtype=$arr_data[3]; my $samplename=$arr_data[4];
     my $start_time=time();
     print "\nDownloading $SRRid via prefetch\n";
-    system($path_to_sratoolkit_prefetch, $SRRid)==0 or die "\nExcecution Stopped because of errors \.\.\. Contact Praneet Chaturvedi for bugs and issues on github\n";
+    system($path_to_sratoolkit_prefetch, '--max-size', '1000G', $SRRid)==0 or die "\nExcecution Stopped because of errors \.\.\. Contact Praneet Chaturvedi for bugs and issues on github\n";
     
     my $SRA=$SRRid."\."."sra";
     my $current_path_to_srafile=$sralocation."\/"."sra"."\/".$SRA;

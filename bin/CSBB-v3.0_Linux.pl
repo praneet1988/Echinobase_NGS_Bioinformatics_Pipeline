@@ -1145,7 +1145,7 @@ sub ProcessPublic
      my $start_time=time();
      print "\nDownloading $SRRid via prefetch\n";
      
-     system($path_to_sratoolkit_prefetch, $SRRid)==0 or die "\nExcecution Stopped because of errors \.\.\. Contact Praneet Chaturvedi for bugs and issues on github\n";
+     system($path_to_sratoolkit_prefetch, '--max-size', '1000G', $SRRid)==0 or die "\nExcecution Stopped because of errors \.\.\. Contact Praneet Chaturvedi for bugs and issues on github\n";
      
      my $SRA=$SRRid."\."."sra";
      my $current_path_to_srafile=$sralocation."\/"."sra"."\/".$SRA;
